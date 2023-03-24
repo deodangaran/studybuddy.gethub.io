@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: Proxima Nova, system-ui, sans-serif;
+    }
+  }
+
+body{
+  overflow-wrap: normal;
+}
+
+.star {
+  color: #ddd;
+  font-size: 2em;
+}
+
+.star.full {
+  color: #ffd700;
+}
+
+.star.half {
+  position: relative;
+}
+
+.star.half:before {
+  content: '\2605';
+  position: absolute;
+  color: #ffd700;
+  overflow: hidden;
+}
+
+.star.empty {
+  color: #ddd;
+}
